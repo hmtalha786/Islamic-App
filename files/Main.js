@@ -19,69 +19,18 @@ import {
   Pressable,
   Spacer,
   Flex,
+  Divider
 } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
-// import ProgressCircle from "react-native-progress-circle";
 
-function Main() {
+function Main({navigation}) {
   return (
     <>
       {/* App Bar Code */}
-      <StatusBar backgroundColor="#831843" barStyle="light-content" />
+      <StatusBar backgroundColor="#881337" barStyle="light-content" />
 
-      <Box safeAreaTop backgroundColor="#831843" />
+      <Box safeAreaTop backgroundColor="#881337" />
 
-      <HStack
-        bg="#831843"
-        px="1"
-        py="3"
-        justifyContent="space-between"
-        alignItems="center"
-      >
-        <HStack space="4" alignItems="center">
-          <IconButton
-            icon={
-              <Icon
-                size="sm"
-                as={<MaterialIcons name="menu" />}
-                color="white"
-              />
-            }
-          />
-          <Text color="white" fontSize="20" fontWeight="bold">
-            Islamic World
-          </Text>
-        </HStack>
-        <HStack space="2">
-          <IconButton
-            icon={
-              <Icon
-                as={<MaterialIcons name="favorite" />}
-                size="sm"
-                color="white"
-              />
-            }
-          />
-          <IconButton
-            icon={
-              <Icon
-                as={<MaterialIcons name="search" />}
-                color="white"
-                size="sm"
-              />
-            }
-          />
-          <IconButton
-            icon={
-              <Icon
-                as={<MaterialIcons name="more-vert" />}
-                size="sm"
-                color="white"
-              />
-            }
-          />
-        </HStack>
-      </HStack>
       {/* Bottom Design Code */}
       <ScrollView
         _contentContainerStyle={{
@@ -89,6 +38,7 @@ function Main() {
           mb: "4",
         }}
       >
+        <Divider my="2" />
         <HStack alignItems="center" justifyContent="space-between">
           <HStack space="4" alignItems="center">
             <Box
@@ -116,19 +66,11 @@ function Main() {
             >
               <Text p="3">Fajar (Now)</Text>
               <Text p="3">23 : 14 : 04</Text>
-              {/* <ProgressCircle
-                percent={30}
-                radius={50}
-                borderWidth={8}
-                color="#3399FF"
-                shadowColor="#999"
-                bgColor="#fff"
-              >
-                <Text style={{ fontSize: 18 }}>{"30%"}</Text>
-              </ProgressCircle> */}
             </Box>
           </HStack>
         </HStack>
+
+        <Divider my="2" />
 
         <VStack space={4} alignItems="center">
           <Pressable
