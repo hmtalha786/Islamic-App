@@ -1,4 +1,5 @@
 import React from "react";
+import { StyleSheet } from "react-native";
 import {
   VStack,
   HStack,
@@ -19,11 +20,11 @@ import {
   Pressable,
   Spacer,
   Flex,
-  Divider
+  Divider,
 } from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 
-function Main({navigation}) {
+function Main({ navigation }) {
   return (
     <>
       {/* App Bar Code */}
@@ -40,32 +41,50 @@ function Main({navigation}) {
       >
         <Divider my="2" />
         <HStack alignItems="center" justifyContent="space-between">
-          <HStack space="4" alignItems="center">
-            <Box
-              p="3"
-              _text={{
-                fontSize: "md",
-                fontWeight: "medium",
-                color: "#000",
-                letterSpacing: "lg",
-              }}
-            >
-              <Text p="3">23 Sha`ban 1478</Text>
-              <Text p="3">28 September 2021</Text>
+          <HStack alignItems="center">
+            <Box p="3" ml="3">
+              <VStack space={2} alignItems="center">
+                <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
+                  23 Sha`ban 1478
+                </Text>
+                <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
+                  28 September 2021
+                </Text>
+                <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
+                  Fajar ( Now )
+                </Text>
+              </VStack>
             </Box>
           </HStack>
-          <HStack space="4" alignItems="center">
-            <Box
-              p="3"
-              _text={{
-                fontSize: "md",
-                fontWeight: "medium",
-                color: "#000",
-                letterSpacing: "lg",
-              }}
-            >
-              <Text p="3">Fajar (Now)</Text>
-              <Text p="3">23 : 14 : 04</Text>
+          <HStack alignItems="center">
+            <Box p="3" mr="5" alignItems="center">
+              <VStack space={2} alignItems="center">
+                <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
+                  (Remaining Time)
+                </Text>
+                <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
+                  23 : 14 : 04
+                </Text>
+                <Pressable
+                  borderColor="#881337"
+                  borderWidth="1"
+                  borderRadius="28"
+                  marginY="2"
+                  // onPress={() => {
+                  //   console.log("Hello world");
+                  // }}
+                >
+                  <Text
+                    py="1"
+                    px="4"
+                    color="#881337"
+                    fontSize={12}
+                    fontWeight="bold"
+                  >
+                    Set Prayer Alarm
+                  </Text>
+                </Pressable>
+              </VStack>
             </Box>
           </HStack>
         </HStack>
@@ -74,11 +93,14 @@ function Main({navigation}) {
 
         <VStack space={4} alignItems="center">
           <Pressable
+            borderColor="#881337"
+            borderWidth="1"
+            borderRadius="15"
             onPress={() => {
               console.log("Hello world");
             }}
           >
-            <Box p="5" rounded="8" bg="#e4e4e7">
+            <Box p="5" rounded="16" bg="#e4e4e7">
               <HStack alignItems="flex-start">
                 <Text color="#881337" fontSize={14} fontWeight="medium">
                   Get Actual Salah Timings
@@ -103,11 +125,14 @@ function Main({navigation}) {
             </Box>
           </Pressable>
           <Pressable
+            borderColor="#881337"
+            borderWidth="1"
+            borderRadius="15"
             onPress={() => {
               console.log("Hello world");
             }}
           >
-            <Box p="5" rounded="8" bg="#e4e4e7">
+            <Box p="5" rounded="16" bg="#e4e4e7">
               <HStack alignItems="flex-start">
                 <Text fontSize={14} pt="2" color="#881337" fontWeight="medium">
                   Verse of the Day
@@ -139,11 +164,14 @@ function Main({navigation}) {
             </Box>
           </Pressable>
           <Pressable
+            borderColor="#881337"
+            borderWidth="1"
+            borderRadius="15"
             onPress={() => {
               console.log("Hello world");
             }}
           >
-            <Box p="5" rounded="8" bg="#e4e4e7">
+            <Box p="5" rounded="16" bg="#e4e4e7">
               <HStack alignItems="flex-start">
                 <Text fontSize={14} pt="2" color="#881337" fontWeight="medium">
                   Hadith of the Day
@@ -175,11 +203,15 @@ function Main({navigation}) {
             </Box>
           </Pressable>
           <Pressable
+            borderColor="#881337"
+            borderWidth="1"
+            borderRadius="15"
+            marginBottom="6"
             onPress={() => {
               console.log("Hello world");
             }}
           >
-            <Box p="5" rounded="8" bg="#e4e4e7">
+            <Box p="5" rounded="16" bg="#e4e4e7">
               <HStack alignItems="flex-start">
                 <Text fontSize={14} pt="2" color="#881337" fontWeight="medium">
                   Dua of the Day
