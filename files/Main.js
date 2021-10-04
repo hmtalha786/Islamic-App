@@ -42,7 +42,7 @@ function Main({ navigation }) {
         <Divider my="2" />
         <HStack alignItems="center" justifyContent="space-between">
           <HStack alignItems="center">
-            <Box p="3" ml="3">
+            <Box p="3" ml="2">
               <VStack space={2} alignItems="center">
                 <Text p="3" color="#881337" fontSize={14} fontWeight="bold">
                   23 Sha`ban 1478
