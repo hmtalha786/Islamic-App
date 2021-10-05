@@ -2,13 +2,13 @@ import React from "react";
 import { NativeBaseProvider } from "native-base";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
-import Main from "./files/Main";
+import Dashboard from "./files/Dashboard";
 import Asmaullah from "./files/Asmaullah";
 import Asmaunabi from "./files/Asmaunabi";
 import Books from "./files/Books";
 import Calander from "./files/Calander";
 import Calculator from "./files/Calculator";
-import Prayers from "./files/Prayers";
+import Prayers from "./files/Prayers.jsx";
 import Ziker from "./files/Ziker";
 import Others from "./files/Others";
 
@@ -17,10 +17,10 @@ function App() {
   return (
     <>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Islamic World">
+        <Drawer.Navigator initialRouteName="Dashboard">
           <Drawer.Screen
-            name="Overview"
-            component={Main}
+            name="Dashboard"
+            component={Dashboard}
             options={{
               headerStyle: {
                 backgroundColor: "#881337",
@@ -31,7 +31,19 @@ function App() {
               },
             }}
           />
-
+          <Drawer.Screen
+            name="Prayer Times"
+            component={Prayers}
+            options={{
+              headerStyle: {
+                backgroundColor: "#881337",
+              },
+              headerTintColor: "#fff",
+              headerTitleStyle: {
+                fontWeight: "bold",
+              },
+            }}
+          />
           <Drawer.Screen
             name="Asma ul Husnah"
             component={Asmaullah}
@@ -46,7 +58,7 @@ function App() {
             }}
           />
           <Drawer.Screen
-            name="Asma u Nabi"
+            name="Asma u Nabi (SAW)"
             component={Asmaunabi}
             options={{
               headerStyle: {
@@ -58,19 +70,7 @@ function App() {
               },
             }}
           />
-          <Drawer.Screen
-            name="Islamic Books"
-            component={Books}
-            options={{
-              headerStyle: {
-                backgroundColor: "#881337",
-              },
-              headerTintColor: "#fff",
-              headerTitleStyle: {
-                fontWeight: "bold",
-              },
-            }}
-          />
+
           <Drawer.Screen
             name="Islamic Calander"
             component={Calander}
@@ -98,8 +98,8 @@ function App() {
             }}
           />
           <Drawer.Screen
-            name="Prayer Times"
-            component={Prayers}
+            name="Islamic Books"
+            component={Books}
             options={{
               headerStyle: {
                 backgroundColor: "#881337",

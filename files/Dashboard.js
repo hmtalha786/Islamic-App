@@ -1,30 +1,24 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+
 import {
   VStack,
   HStack,
-  Button,
   IconButton,
   Icon,
   Text,
   NativeBaseProvider,
-  Center,
   Box,
   StatusBar,
   ScrollView,
-  Heading,
-  Container,
-  Stack,
-  View,
-  Spinner,
   Pressable,
   Spacer,
   Flex,
   Divider,
 } from "native-base";
+
 import { MaterialIcons } from "@expo/vector-icons";
 
-function Main({ navigation }) {
+function Dashboard({ navigation }) {
   return (
     <>
       {/* App Bar Code */}
@@ -251,7 +245,7 @@ function Main({ navigation }) {
 export default function () {
   return (
     <NativeBaseProvider>
-      <Main />
+      <Dashboard />
     </NativeBaseProvider>
   );
 }
