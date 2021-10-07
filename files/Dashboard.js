@@ -18,7 +18,7 @@ import {
 
 import { MaterialIcons } from "@expo/vector-icons";
 
-function Dashboard({ navigation }) {
+function Dashboard() {
   return (
     <>
       {/* App Bar Code */}
@@ -44,21 +44,6 @@ function Dashboard({ navigation }) {
                 <Text p="3" color="blue.700" fontSize={14} fontWeight="bold">
                   28 September 2021
                 </Text>
-                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
-                  Fajar ( Now )
-                </Text>
-              </VStack>
-            </Box>
-          </HStack>
-          <HStack alignItems="center">
-            <Box p="3" mr="5" alignItems="center">
-              <VStack space={2} alignItems="center">
-                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
-                  (Remaining Time)
-                </Text>
-                <Text p="3" color="green.700" fontSize={14} fontWeight="bold">
-                  23 : 14 : 04
-                </Text>
                 <Pressable
                   borderColor="green.700"
                   borderWidth="1"
@@ -78,6 +63,21 @@ function Dashboard({ navigation }) {
                     Set Prayer Alarm
                   </Text>
                 </Pressable>
+              </VStack>
+            </Box>
+          </HStack>
+          <HStack alignItems="center">
+            <Box p="3" mr="5" alignItems="center">
+              <VStack space={2} alignItems="center">
+                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
+                  (Remaining Time)
+                </Text>
+                <Text p="3" color="green.700" fontSize={14} fontWeight="bold">
+                  23 : 14 : 04
+                </Text>
+                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
+                  Fajar ( Now )
+                </Text>
               </VStack>
             </Box>
           </HStack>

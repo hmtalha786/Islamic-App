@@ -1,75 +1,130 @@
-// Near by Mosques
-
-// Ramadan Calander
-
-// Six Kalamas
-
-// Rate App
-
-// Share App
-
-// More Apps
-
-// Donations
-
-// About Us
-
-// Contact Us
-
-// Settings
-
 import React from "react";
+import { NativeBaseProvider, Box, Text, Pressable, HStack } from "native-base";
 import {
-  IconButton,
-  SimpleGrid,
-  Icon,
-  NativeBaseProvider,
-  Box,
-  Text
-} from "native-base";
-import { FontAwesome5 } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { MaterialIcons } from "@expo/vector-icons";
+  MaterialIcons,
+  Entypo,
+  FontAwesome5,
+  Ionicons,
+} from "@expo/vector-icons";
 
-function Other() {
-
+function Others() {
   return (
-    <SimpleGrid columns={5} spacingY={8} spacingX={4}>
-      <Box alignItems="center">
-        <FontAwesome5 name="compass" size={24} color="black" />
-        <Text>Qibla</Text>
-      </Box>
-      <Box alignItems="center">
-        <AntDesign name="book" size={24} color="black" />
-        <Text>Quran</Text>
-      </Box>
-      <Box alignItems="center">
-        <MaterialIcons name="date-range" size={24} color="black" />
-        <Text>Ramadan Calander</Text>
-      </Box>
-      <Box alignItems="center">
-        <AntDesign name="setting" size={24} color="black" />
-        <Text>Settings</Text>
-      </Box>
-      <Box alignItems="center">
-        <FontAwesome5 name="compass" size={24} color="black" />
-        <Text>Hello</Text>
-      </Box>
-      <Box alignItems="center">
-        <FontAwesome5 name="compass" size={24} color="black" />
-        <Text>Hello</Text>
-      </Box>
-    </SimpleGrid>
+    <>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <Entypo name="share" size={30} color="#15803d" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              Share App
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <MaterialIcons name="star-rate" size={30} color="#1d4ed8" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              Rate App
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <FontAwesome5 name="donate" size={30} color="#c2410c" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              Donations
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <Entypo name="users" size={30} color="#047857" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              About Us
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <MaterialIcons name="contacts" size={30} color="#be185d" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              Contact Us
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <Ionicons name="logo-apple-appstore" size={32} color="#c2410c" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              More Apps
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          console.log("Hello world");
+        }}
+      >
+        <Box p="5" ml="5">
+          <HStack alignItems="flex-start">
+            <Ionicons name="settings-outline" size={30} color="#be123c" />
+
+            <Text ml="5" mt="1" fontSize={16} color="#000" fontWeight="bold">
+              Settings
+            </Text>
+          </HStack>
+        </Box>
+      </Pressable>
+    </>
   );
 }
 
 export default function () {
   return (
     <NativeBaseProvider>
-      <Box alignItems="center" justifyContent="space-between" pt="8" flex={1}>
-        <Other />
+      <Box mt="5" flex={1}>
+        <Others />
       </Box>
     </NativeBaseProvider>
   );
 }
-
