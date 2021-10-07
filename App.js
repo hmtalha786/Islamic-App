@@ -8,7 +8,7 @@ import Asmaunabi from "./files/Asmaunabi";
 import Books from "./files/Books";
 import Calander from "./files/Calander";
 import Calculator from "./files/Calculator";
-import Prayers from "./files/Prayers.jsx";
+import Prayers from "./files/Prayers.js";
 import Ziker from "./files/Ziker";
 import Others from "./files/Others";
 
@@ -23,7 +23,7 @@ function App() {
             component={Dashboard}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -36,7 +36,7 @@ function App() {
             component={Prayers}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -49,7 +49,7 @@ function App() {
             component={Asmaullah}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -62,7 +62,7 @@ function App() {
             component={Asmaunabi}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -76,7 +76,7 @@ function App() {
             component={Calander}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -89,7 +89,7 @@ function App() {
             component={Calculator}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -102,7 +102,7 @@ function App() {
             component={Books}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -115,7 +115,7 @@ function App() {
             component={Ziker}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
@@ -128,7 +128,7 @@ function App() {
             component={Others}
             options={{
               headerStyle: {
-                backgroundColor: "#881337",
+                backgroundColor: "#005db4",
               },
               headerTintColor: "#fff",
               headerTitleStyle: {
