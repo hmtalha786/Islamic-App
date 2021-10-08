@@ -77,7 +77,7 @@ function Dashboard() {
           </HStack>
         </HStack>
 
-        <HStack alignItems="center" px="2">
+        <HStack alignItems="center" px="2" py="2">
           <Pressable cursor="pointer" py="3" flex={1}>
             <Center>
               <Feather name="sunrise" size={24} color="black" />
@@ -110,7 +110,7 @@ function Dashboard() {
             <Center>
               <MaterialCommunityIcons
                 name="weather-sunset"
-                size={24}
+                size={26}
                 color="black"
               />
               <Text color="black" fontSize="12">

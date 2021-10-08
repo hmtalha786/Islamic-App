@@ -4,17 +4,88 @@ import React from "react";
 import {
   VStack,
   HStack,
+  IconButton,
+  Icon,
   Text,
   NativeBaseProvider,
   Box,
+  StatusBar,
+  ScrollView,
+  Pressable,
+  Spacer,
+  Flex,
+  Divider,
   Center,
 } from "native-base";
 
-import { FontAwesome5 } from "@expo/vector-icons";
+import {
+  FontAwesome5,
+  Feather,
+  Ionicons,
+  FontAwesome,
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from "@expo/vector-icons";
 
 export function Example() {
   return (
     <>
+      <Divider my="3" />
+
+      <Center my="2">
+        <Ionicons name="sunny-sharp" size={30} color="black" />
+        <Text fontSize={18} fontWeight="bold">
+          Zuhar
+        </Text>
+      </Center>
+
+      <HStack>
+        <Box alignItems="flex-start" mr="10">
+          <Text fontSize={10}>Start Time</Text>
+          <Text color="#000" fontSize={14} fontWeight="bold">
+            12:16 pm
+          </Text>
+        </Box>
+
+        <Box alignItems="flex-end" ml="10">
+          <Text fontSize={10}>Last Time</Text>
+          <Text color="#000" fontSize={14} fontWeight="bold">
+            04:04 pm
+          </Text>
+        </Box>
+      </HStack>
+
+      <Divider my="2" />
+
+      <Pressable>
+        <Box mx="8" my="3">
+          <Text mt="2" fontSize={12} color="darkBlue.700" textAlign="justify">
+            Anas (RA) reported: The Messenger of Allah, peace and blessings be
+            upon him, said,
+          </Text>
+          <Text
+            mt="2"
+            fontSize={12}
+            color="darkBlue.700"
+            fontWeight="bold"
+            textAlign="center"
+          >
+            “Beloved to me in the world are women and perfume, yet the delight
+            of my eyes is in prayer.”
+          </Text>
+
+          <Text
+            mt="2"
+            color="red.600"
+            fontSize={12}
+            fontWeight="medium"
+            textAlign="center"
+          >
+            Read More
+          </Text>
+        </Box>
+      </Pressable>
+
       <VStack space={3}>
         <HStack
           alignItems="center"
@@ -48,7 +119,6 @@ export function Example() {
         <HStack
           alignItems="center"
           justifyContent="space-between"
-          // backgroundColor="#fce7f3"
           borderColor="#f9a8d4"
           borderWidth="2"
           borderRadius="12"
@@ -76,7 +146,6 @@ export function Example() {
         <HStack
           alignItems="center"
           justifyContent="space-between"
-          // backgroundColor="#f3e8ff"
           borderColor="#d8b4fe"
           borderWidth="2"
           borderRadius="12"
@@ -104,7 +173,6 @@ export function Example() {
         <HStack
           alignItems="center"
           justifyContent="space-between"
-          // backgroundColor="#d1fae5"
           borderColor="#6ee7b7"
           borderWidth="2"
           borderRadius="12"
@@ -132,7 +200,6 @@ export function Example() {
         <HStack
           alignItems="center"
           justifyContent="space-between"
-          // backgroundColor="#ffedd5"
           borderColor="#fdba74"
           borderWidth="2"
           borderRadius="12"
