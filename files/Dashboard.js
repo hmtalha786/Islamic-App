@@ -16,12 +16,12 @@ import {
   Divider,
 } from "native-base";
 
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
 function Dashboard() {
   return (
     <>
-      {/* App Bar Code */}
+      {/* Status Bar Code */}
       <StatusBar backgroundColor="#005db4" barStyle="light-content" />
 
       <Box safeAreaTop backgroundColor="#005db4" />
@@ -36,47 +36,34 @@ function Dashboard() {
         <Divider my="2" />
         <HStack alignItems="center" justifyContent="space-between">
           <HStack alignItems="center">
-            <Box p="3" ml="2">
-              <VStack space={2} alignItems="center">
-                <Text p="3" color="green.700" fontSize={14} fontWeight="bold">
-                  23 Sha`ban 1478
+            <Box p="3">
+              <VStack alignItems="flex-start">
+                <Text fontSize={10}>Now</Text>
+                <Text color="#000" fontSize={14} fontWeight="bold">
+                  Zuhar
                 </Text>
-                <Text p="3" color="blue.700" fontSize={14} fontWeight="bold">
-                  28 September 2021
+                <Divider my="2" />
+                <Text fontSize={10}>Upcoming</Text>
+                <Text color="#000" fontSize={14} fontWeight="bold">
+                  Asar
                 </Text>
-                <Pressable
-                  borderColor="green.700"
-                  borderWidth="1"
-                  borderRadius="28"
-                  marginY="2"
-                  // onPress={() => {
-                  //   console.log("Hello world");
-                  // }}
-                >
-                  <Text
-                    py="1"
-                    px="4"
-                    color="red.700"
-                    fontSize={12}
-                    fontWeight="bold"
-                  >
-                    Set Prayer Alarm
-                  </Text>
-                </Pressable>
+                <Text fontSize={10}>04:04 pm</Text>
               </VStack>
             </Box>
           </HStack>
           <HStack alignItems="center">
-            <Box p="3" mr="5" alignItems="center">
-              <VStack space={2} alignItems="center">
-                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
-                  (Remaining Time)
+            <Box p="3" alignItems="center">
+              <VStack alignItems="flex-end">
+                <Ionicons name="partly-sunny-outline" size={30} color="black" />
+                <Divider my="2" />
+                <Text fontSize={18} fontWeight="bold">
+                  12
                 </Text>
-                <Text p="3" color="green.700" fontSize={14} fontWeight="bold">
-                  23 : 14 : 04
+                <Text color="#000" fontSize={10}>
+                  Rajab, 1446
                 </Text>
-                <Text p="3" color="red.700" fontSize={14} fontWeight="bold">
-                  Fajar ( Now )
+                <Text color="#000" fontSize={10}>
+                  Thursday 25-05-2021
                 </Text>
               </VStack>
             </Box>
