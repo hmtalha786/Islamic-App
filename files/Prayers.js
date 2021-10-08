@@ -6,9 +6,8 @@ import {
   HStack,
   Text,
   NativeBaseProvider,
-  Center,
   Box,
-
+  Center,
 } from "native-base";
 
 import { FontAwesome5 } from "@expo/vector-icons";

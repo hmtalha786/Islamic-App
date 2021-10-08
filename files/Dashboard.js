@@ -14,9 +14,16 @@ import {
   Spacer,
   Flex,
   Divider,
+  Center,
 } from "native-base";
 
-import { MaterialIcons, Ionicons } from "@expo/vector-icons";
+import {
+  Feather,
+  Ionicons,
+  FontAwesome,
+  MaterialCommunityIcons,
+  MaterialIcons,
+} from "@expo/vector-icons";
 
 function Dashboard() {
   return (
@@ -54,7 +61,7 @@ function Dashboard() {
           <HStack alignItems="center">
             <Box p="3" alignItems="center">
               <VStack alignItems="flex-end">
-                <Ionicons name="partly-sunny-outline" size={30} color="black" />
+                <Ionicons name="sunny-sharp" size={30} color="black" />
                 <Divider my="2" />
                 <Text fontSize={18} fontWeight="bold">
                   12
@@ -68,6 +75,58 @@ function Dashboard() {
               </VStack>
             </Box>
           </HStack>
+        </HStack>
+
+        <HStack alignItems="center" px="2">
+          <Pressable cursor="pointer" py="3" flex={1}>
+            <Center>
+              <Feather name="sunrise" size={24} color="black" />
+              <Text color="black" fontSize="12">
+                Fajar
+              </Text>
+            </Center>
+          </Pressable>
+          <Spacer />
+          <Pressable cursor="pointer" py="3" flex={1}>
+            <Center>
+              <Ionicons name="sunny-sharp" size={24} color="black" />
+              <Text color="black" fontSize="12">
+                Zuhar
+              </Text>
+            </Center>
+          </Pressable>
+          <Spacer />
+
+          <Pressable cursor="pointer" py="3" flex={1}>
+            <Center>
+              <Feather name="sunset" size={24} color="black" />
+              <Text color="black" fontSize="12">
+                Asar
+              </Text>
+            </Center>
+          </Pressable>
+          <Spacer />
+          <Pressable cursor="pointer" py="3" flex={1}>
+            <Center>
+              <MaterialCommunityIcons
+                name="weather-sunset"
+                size={24}
+                color="black"
+              />
+              <Text color="black" fontSize="12">
+                Magrib
+              </Text>
+            </Center>
+          </Pressable>
+          <Spacer />
+          <Pressable cursor="pointer" py="3" flex={1}>
+            <Center>
+              <FontAwesome name="moon-o" size={24} color="black" />
+              <Text color="black" fontSize="12">
+                Isha
+              </Text>
+            </Center>
+          </Pressable>
         </HStack>
 
         <Divider my="2" />
@@ -94,9 +153,13 @@ function Dashboard() {
               <Text mt="3" color="green.700" fontWeight="bold" fontSize={20}>
                 Prayer Time
               </Text>
-              <Text mt="2" fontSize={14} color="darkBlue.700">
-                Unlock powerfull time-saving tools for creating email delivery
-                and collecting marketing data
+              <Text mt="2" fontSize={12} color="darkBlue.700">
+                Anas (RA) reported: The Messenger of Allah, peace and blessings
+                be upon him, said,
+              </Text>
+              <Text mt="2" fontSize={12} color="darkBlue.700" fontWeight="bold">
+                “Beloved to me in the world are women and perfume, yet the
+                delight of my eyes is in prayer.”
               </Text>
               <Flex>
                 <Text mt="2" color="red.600" fontSize={12} fontWeight="medium">
